@@ -25,3 +25,6 @@ jobs:
 
       - name: Show Runner OS
         run: uname -a
+
+      - name: Break Pipeline
+        run: exit 1
