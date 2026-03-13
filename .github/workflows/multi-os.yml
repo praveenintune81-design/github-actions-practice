@@ -1,6 +1,7 @@
 name: Multi OS Runner Test
 
-on: push
+on:
+  workflow_dispatch:
 
 jobs:
 
@@ -44,3 +45,15 @@ jobs:
 
       - name: Current User
         run: whoami
+
+      - name: Docker version
+        run: docker --version
+
+      - name: Python version
+        run: python --version
+
+      - name: Node version
+        run: node --version
+
+      - name: Git version
+        run: git --version
