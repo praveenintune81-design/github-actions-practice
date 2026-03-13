@@ -1,6 +1,7 @@
 name: Multi OS Runner Test
 
-on: push
+on:
+  workflow_dispatch:
 
 jobs:
 
