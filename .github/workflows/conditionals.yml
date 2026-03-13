@@ -9,8 +9,6 @@ jobs:
   conditional-job:
 
     runs-on: ubuntu-latest
-
-    # Job runs only on push events
     if: github.event_name == 'push'
 
     steps:
@@ -19,7 +17,7 @@ jobs:
         if: github.ref == 'refs/heads/main'
         run: echo "Running on main branch"
 
-      - name: Force a failure
+      - name: Force failure
         run: exit 1
         continue-on-error: true
 
