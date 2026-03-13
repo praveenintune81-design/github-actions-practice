@@ -1,0 +1,46 @@
+name: Multi OS Runner Test
+
+on: push
+
+jobs:
+
+  ubuntu-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show OS
+        run: uname -a
+
+      - name: Hostname
+        run: hostname
+
+      - name: Current User
+        run: whoami
+
+
+  windows-job:
+    runs-on: windows-latest
+
+    steps:
+      - name: Show OS
+        run: systeminfo
+
+      - name: Hostname
+        run: hostname
+
+      - name: Current User
+        run: whoami
+
+
+  mac-job:
+    runs-on: macos-latest
+
+    steps:
+      - name: Show OS
+        run: uname -a
+
+      - name: Hostname
+        run: hostname
+
+      - name: Current User
+        run: whoami
