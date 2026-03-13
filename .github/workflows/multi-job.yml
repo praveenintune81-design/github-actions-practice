@@ -27,6 +27,7 @@ jobs:
     steps:
       - name: Deploy Step
         run: echo "Deploying"
+<<<<<<< HEAD
 
 
 
@@ -35,3 +36,5 @@ jobs:
 
 
 
+=======
+>>>>>>> 2b849d6 (solve error)
